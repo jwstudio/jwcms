@@ -44,6 +44,7 @@ img {
 
 .navbar a:hover {
     text-decoration: underline;
+  color: #333;
 }
 
 .navbar a:visited {
