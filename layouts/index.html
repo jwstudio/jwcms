@@ -2,15 +2,69 @@
 <div class="container" style="padding-left: 30px; padding-right: 30px;">
 <div id="hero">
 	<img src="https://raw.githubusercontent.com/jwstudio/jww/4ed6549f7cd4fe1fa7c421937ca04688f5a27886/u2nl2a.jpg">
-<h1>{{ .Params.title }}</h1>
-
-<p>{{ .Params.blurb }}</p>
-</div>
+	<h1>James Whitby</h1>
+	<p>I am a <b>frontend web designer.</b></p>
+	<a href="https://twitter.com/JamesWhitby20" target="_blank"><i class="fab fa-twitter" style="margin-right: 20px;"></i></a><a href="mailto:jameswhitby813@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+	</div>
 </div>
 
 <br><br>
-<h2>{{ .Params.section.heading }}</h2>
 
-<p>{{ .Params.section.text }}</p>
-</div>
+	<div id="projects"></div>
+<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(235, 235, 235, 1)" offset="0%"></stop><stop stop-color="rgba(235, 235, 235, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L1440,0L2880,50L4320,50L5760,10L7200,90L8640,60L10080,10L11520,60L12960,90L14400,80L15840,50L17280,90L18720,70L20160,90L21600,0L23040,30L24480,60L25920,20L27360,10L28800,0L30240,70L31680,80L33120,90L34560,70L34560,100L33120,100L31680,100L30240,100L28800,100L27360,100L25920,100L24480,100L23040,100L21600,100L20160,100L18720,100L17280,100L15840,100L14400,100L12960,100L11520,100L10080,100L8640,100L7200,100L5760,100L4320,100L2880,100L1440,100L0,100Z"></path></svg>
+	<div id="recentprojects">
+	<div class="container" style="padding-left: 30px; padding-right: 30px;">
+	<h2>Recent Projects</h2>
+	<div id="project">
+		<hr>
+		<br>
+		<p><b>Anne Gleed Interiors</b></p>
+		<p>This is a description of the projects. Integer convallis dolor ut rhoncus rhoncus. In et sem accumsan.</p>
+		<a href="">Learn More <i class="fas fa-arrow-right" style="border: none;"></i></a>
+		<br><br>
+	</div>
+		
+		<div id="project">
+		<hr>
+		<br>
+		<p><b>Project Name</b></p>
+		<p>This is a description of the projects. Integer convallis dolor ut rhoncus rhoncus. In et sem accumsan.</p>
+		<a href="">Learn More <i class="fas fa-arrow-right" style="border: none;"></i></a>
+		<br><br>
+	</div>
+		<hr>
+	</div>
+</div>	
+<svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(235, 235, 235, 1)" offset="0%"></stop><stop stop-color="rgba(235, 235, 235, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L1440,10L2880,60L4320,0L5760,30L7200,20L8640,90L10080,70L11520,0L12960,50L14400,10L15840,70L17280,20L18720,90L20160,10L21600,10L23040,70L24480,10L25920,0L27360,50L28800,20L30240,20L31680,70L33120,10L34560,90L34560,100L33120,100L31680,100L30240,100L28800,100L27360,100L25920,100L24480,100L23040,100L21600,100L20160,100L18720,100L17280,100L15840,100L14400,100L12960,100L11520,100L10080,100L8640,100L7200,100L5760,100L4320,100L2880,100L1440,100L0,100Z"></path></svg>
+	<br><br>
+	
+	<div id="contact">
+		<div class="container" style="padding-left: 30px; padding-right: 30px;">
+		<h2>Contact Me</h2>
+		<hr>
+			<br>
+			<a href="https://twitter.com/JamesWhitby20" target="_blank"><i class="fab fa-twitter" style="margin-right: 20px;"></i></a><a href="mailto:contact@jwhitbyweb.com" target="_blank"><i class="fas fa-envelope"></i></a>
+			<br><br>
+			<h2>Or fill out the form!</h2>
+			<form name="contact" action="thanks.html" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="contact">
+  <p>
+    <label>Name </label>*<br> <input type="text" name="name" placeholder="Your Name" required/>  
+  </p>
+  <p>
+    <label>Email *</label><br> <input type="email" name="email" placeholder="Your Email" required/>
+  </p>
+  <p>
+    <label>Project Info *</label><br> <textarea name="message" placeholder="Your Projects Info" required></textarea>
+  </p>
+  <p>
+    <button type="submit">Contact Me</button>
+  </p>
+</form>
+
+		</div>
+	</div>
+	
+	<br><br>
+
 {{ partial "footer.html" . }}
