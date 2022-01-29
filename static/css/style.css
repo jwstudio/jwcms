@@ -79,6 +79,23 @@ img {
     box-shadow: none;
 }
 
+/* Hero */
+
+#hero {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+#hero img {
+	width: 25vw;
+	height: 25vw;
+	border-radius: 50px;
+    margin-bottom: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero */
+
 /* LISTS */
 
 .post-snippet {
